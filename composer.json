@@ -1,0 +1,24 @@
+{
+    "name": "dyaa/pushover",
+    "description": "Laravel 4.1 Pushover Package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dyaa Eldin",
+            "email": "mail@dyaa.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Dyaa\\Pushover\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
