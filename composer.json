@@ -8,7 +8,8 @@
     "authors": [
         {
             "name": "Dyaa Eldin",
-            "email": "mail@dyaa.me"
+            "email": "mail@dyaa.me",
+            "homepage": "http://www.dyaa.me/"
         }
     ],
     "require": {
