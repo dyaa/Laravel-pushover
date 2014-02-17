@@ -60,3 +60,6 @@ Copyright (c) 2014 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
 
   [1]: http://www.dyaa.me/
   [2]: https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dyaa/laravel-pushover/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
