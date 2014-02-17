@@ -3,6 +3,7 @@
     "description": "Laravel 4.1 Pushover Package",
     "keywords": ["laravel", "pushover", "Real Time", "notification"],
     "license": "MIT",
+    "version": "0.1.0",
     "type": "laravel-package",
     "authors": [
         {
