@@ -1,7 +1,9 @@
 {
     "name": "dyaa/pushover",
     "description": "Laravel 4.1 Pushover Package",
+    "keywords": ["laravel", "pushover", "Real Time", "notification"],
     "license": "MIT",
+    "type": "laravel-package",
     "authors": [
         {
             "name": "Dyaa Eldin",

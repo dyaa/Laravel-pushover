@@ -1,5 +1,6 @@
 Laravel 4 Pushover.net package
 ======
+[![Latest Stable Version](https://poser.pugx.org/dyaa/pushover/v/stable.png)](https://packagist.org/packages/dyaa/pushover) [![Total Downloads](https://poser.pugx.org/dyaa/pushover/downloads.png)](https://packagist.org/packages/dyaa/pushover) [![Latest Unstable Version](https://poser.pugx.org/dyaa/pushover/v/unstable.png)](https://packagist.org/packages/dyaa/pushover) [![License](https://poser.pugx.org/dyaa/pushover/license.png)](https://packagist.org/packages/dyaa/pushover)
 
 A Laravel 4 package for push notification service from pushover.net.
 
@@ -53,4 +54,8 @@ Will Write it tomorrow :)
 
 ## License
 
-Copyright (c) 2014 Dyaa Eldin Moustafa Licensed under the [MIT license](https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE).
+Copyright (c) 2014 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
+
+
+  [1]: http://www.dyaa.me/
+  [2]: https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE
