@@ -13,6 +13,7 @@ To get the latest version of dyaa/pushover simply require it in your `composer.j
 ```
 "dyaa/pushover": "dev-master"
 ```
+After that, you'll need to run `composer update` to download the latest Version and updating the autoloader.
 
 Or
 
@@ -20,7 +21,7 @@ Or
 composer require dyaa/pushover:dev-master
 ```
 
-After that, you'll need to run `composer update` to download the latest Version and updating the autoloader.
+
 
 Once dyaa/pushover is installed, you need to register the ServiceProvider. To do that open `app/config/app.php` and add the following to the `providers` key.
 
