@@ -28,6 +28,7 @@ class PushoverServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
+
 		$this->app['pushover'] = $this->app->share(function($app)
         {
           return new Pushover($app['config']);
@@ -38,10 +39,19 @@ class PushoverServiceProvider extends ServiceProvider {
           $loader = \Illuminate\Foundation\AliasLoader::getInstance();
           $loader->alias('Pushover', 'Dyaa\Pushover\Facades\Pushover');
         });
+
+		$this->app['pushover.send'] = $this->app->share(function ()
+		{
+			return new Commands\PushoverCommand($this->app['pushover']);
+		});
+
+		$this->commands(
+			'pushover.send'
+		);
 	}
 
 	/**
-	 * Get the services provided by the provider.
+	 * Get the services provided by the provider.	
 	 *
 	 * @return array
 	 */
