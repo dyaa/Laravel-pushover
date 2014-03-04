@@ -11,7 +11,10 @@ A Laravel 4 package for Android push notification service from https://pushover.
 - [Commands](#commands)
 - [TODO](#todo)
 - [License](#license)
-___
+
+
+----------
+
 
 #### Installation
 
