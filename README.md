@@ -4,6 +4,13 @@ Laravel 4 Pushover.net Package
 
 A Laravel 4 package for Android push notification service from https://pushover.net/.
 
+#### Content
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Commands](#commands)
+- [TODO](#todo)
+- [License](#license)
 ___
 
 #### Installation
@@ -29,7 +36,11 @@ Once dyaa/pushover is installed, you need to register the ServiceProvider. To do
 'Dyaa\Pushover\PushoverServiceProvider',
 ```
 
-## How to use
+
+----------
+
+
+#### Configuration 
 First you need to publish the config file. To do that, type the following in the terminal:
 
 ```
@@ -47,6 +58,9 @@ return array(
 );
 ```
 
+----------
+
+#### Usage
 Now you can use the package like that:
 
 To Set a message (**Required**)
@@ -87,7 +101,44 @@ Pushover::send();
 ```
 All other information will be found in details here https://pushover.net/api
 
-## License
+
+----------
+#### Commands
+
+In the version 1.2.0 and above it supports the Artisan Commands but first make sure that you've done the [Configuration](#configuration) correctly.
+
+You can run 
+
+    php artisan list
+and you'll find
+
+    pushover
+    pushover:send               Pushover Command
+
+To send a pushover message you'll be able to use it like this way
+
+    php artisan pushover:send YourTitle YourMessage
+to turn on the debug mode just add
+
+    --debug
+in the end of the Command line
+
+to set a sound you can add
+
+    --sound=YourSound
+    
+To know the supported sounds from here https://pushover.net/api#sounds
+
+#### TODO
+
+ - Add the support of URL in the Command line
+ - Add the support of priority in the Command line
+ - Add the ability to set a device
+
+----------
+
+
+#### License
 
 Copyright (c) 2014 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
 
@@ -95,8 +146,4 @@ Copyright (c) 2014 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
   [1]: http://www.dyaa.me/
   [2]: https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE
 
-[![Stories in Ready](https://badge.waffle.io/dyaa/Laravel-pushover.png?label=ready)](https://waffle.io/dyaa/Laravel-pushover) 
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dyaa/laravel-pushover/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+[![Stories in Ready](https://badge.waffle.io/dyaa/Laravel-pushover.png?label=ready)](https://waffle.io/dyaa/Laravel-pushover)
