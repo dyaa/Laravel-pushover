@@ -118,7 +118,7 @@ and you'll find
     pushover
     pushover:send               Pushover Command
 
-To send a pushover message you'll be able to use it like this way
+To send a pushover message you'll be able to use it like this way ( **Title and Message are Required** )
 
     php artisan pushover:send YourTitle YourMessage
 to turn on the debug mode just add
