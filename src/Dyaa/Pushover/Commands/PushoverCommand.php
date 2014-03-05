@@ -40,7 +40,7 @@ class PushoverCommand extends Command {
 	 */
 	public function fire()
 	{
-		$Title	= $this->argument('title');
+		$title	= $this->argument('title');
 		$msg	= $this->argument('msg');
 		$url 	= $this->option('url');
 		$debug 	= $this->option('debug');
