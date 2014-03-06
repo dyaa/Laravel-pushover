@@ -1,9 +1,9 @@
 {
     "name": "dyaa/pushover",
     "description": "Laravel 4.1 Pushover Package",
-    "keywords": ["laravel", "pushover", "Real Time", "notification"],
+    "keywords": ["laravel", "pushover", "Real Time", "notification","Artisan","CLI","Command"],
     "license": "MIT",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "type": "laravel-package",
     "authors": [
         {

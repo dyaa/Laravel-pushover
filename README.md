@@ -4,14 +4,14 @@ Laravel 4 Pushover.net Package
 
 A Laravel 4 package for Android push notification service from https://pushover.net/.
 
+**Please if you found any bug or you have any enhancement, You're so welcomed to open an Issue or make a pull request.
+
 #### Content
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Commands](#commands)
-- [TODO](#todo)
 - [License](#license)
-
 
 ----------
 
@@ -33,7 +33,7 @@ composer require dyaa/pushover:dev-master
 
 
 
-Once dyaa/pushover is installed, you need to register the ServiceProvider. To do that open `app/config/app.php` and add the following to the `providers` key.
+Once dyaa/pushover is installed, you need to register the Service Provider. To do that open `app/config/app.php` and add the following to the `providers` key.
 
 ```
 'Dyaa\Pushover\PushoverServiceProvider',
@@ -126,17 +126,35 @@ to turn on the debug mode just add
     --debug
 in the end of the Command line
 
-to set a sound you can add
+to set a sound you can add *"Optional"*
 
     --sound=YourSound
     
 To know the supported sounds from here https://pushover.net/api#sounds
 
-#### TODO
+to set a Device name *"Optional"*
 
- - Add the support of URL in the Command line
- - Add the support of priority in the Command line
- - Add the ability to set a device
+    --device=YourDeviceName
+    
+to send a URL *"Optional"*
+
+    --url=http://www.example.com/
+    
+to set a title for the URL *"Optional"*
+
+    --urltitle=UrlTitle
+    
+to set a priority Message you can know more about the Priority Messages from here https://pushover.net/api#priority  *"Optional"*
+
+    --priority=1
+    
+to set a priority retry *(in seconds)* Default is **60**  *"Optional"*
+
+    --retry=60
+    
+to set a priority expire *(in seconds)* Default is **356**  *"Optional"*
+
+    --expire=356
 
 ----------
 

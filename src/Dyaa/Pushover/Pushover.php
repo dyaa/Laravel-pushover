@@ -71,7 +71,7 @@ class Pushover
         $this->timestamp = $timestamp;
     }
 
-    public function priority($priority = 0, $retry, $expire)
+    public function priority($priority = 0, $retry = 60, $expire = 365)
     {
     	$this->priority = $priority;
     	$this->retry = $retry;
