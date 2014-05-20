@@ -17,12 +17,14 @@ A Laravel 4 package for Android push notification service from https://pushover.
 
 
 #### Installation
+If you still using laravel 4.1 use the **1.3.0** version
 
 To get the latest version of dyaa/pushover simply require it in your `composer.json` file.
 
 ```
 "dyaa/pushover": "dev-master"
 ```
+
 After that, you'll need to run `composer update` to download the latest Version and updating the autoloader.
 
 Or
