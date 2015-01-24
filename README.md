@@ -163,10 +163,9 @@ to set a priority expire *(in seconds)* Default is **356**  *"Optional"*
 
 #### License
 
-Copyright (c) 2014 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
+Copyright (c) 2015 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
 
 
-  [1]: http://www.dyaa.me/
+  [1]: https://dyaa.me/
   [2]: https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE
 
-[![Stories in Ready](https://badge.waffle.io/dyaa/Laravel-pushover.png?label=ready)](https://waffle.io/dyaa/Laravel-pushover)
