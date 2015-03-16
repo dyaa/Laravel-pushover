@@ -18,6 +18,8 @@ class Pushover
 	private $priority;
 	private $retry;
 	private $expire;
+    private $title;
+    private $msg;
 
     public function __construct(Repository $config)
     {
@@ -53,7 +55,7 @@ class Pushover
     {
     	if($debug == null)
     	{
-    		$debug = false;
+    		$this->debug = false;
     	}else{
 			$this->debug = $debug;
     	}
@@ -110,7 +112,7 @@ class Pushover
 			$response = json_decode($response);
 			return $response->status;
 		}
-}
+    }
 
 
 }
