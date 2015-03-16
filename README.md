@@ -50,12 +50,10 @@ Once dyaa/pushover is installed, you need to register the Service Provider. To d
 Create `app/config/dyaa_pushover.php`  and fill it with your Token and the User Key from https://pushover.net/
 
 ```
-return array(
-
+return [
     'token' => 'App Token',
     'user_key' => 'User Key',
-
-);
+];
 ```
 
 ----------
