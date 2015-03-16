@@ -1,8 +1,8 @@
-Laravel 4 Pushover.net Package
+Laravel 5 Pushover.net Package
 ======
 [![Latest Stable Version](https://poser.pugx.org/dyaa/pushover/v/stable.png)](https://packagist.org/packages/dyaa/pushover) [![Total Downloads](https://poser.pugx.org/dyaa/pushover/downloads.png)](https://packagist.org/packages/dyaa/pushover) [![Latest Unstable Version](https://poser.pugx.org/dyaa/pushover/v/unstable.png)](https://packagist.org/packages/dyaa/pushover) [![Dependency Status](https://www.versioneye.com/user/projects/5303cf06ec1375065e000003/badge.png)](https://www.versioneye.com/user/projects/5303cf06ec1375065e000003)  [![License](https://poser.pugx.org/dyaa/pushover/license.png)](https://packagist.org/packages/dyaa/pushover)
 
-A Laravel 4 package for Android push notification service from https://pushover.net/.
+A Laravel 5 package for Android and iOS push notification service from https://pushover.net/.
 
 **Please if you found any bug or you have any enhancement, You're so welcomed to open an Issue or make a pull request.
 
@@ -45,22 +45,15 @@ Once dyaa/pushover is installed, you need to register the Service Provider. To d
 ----------
 
 
-#### Configuration 
-First you need to publish the config file. To do that, type the following in the terminal:
+#### Configuration
+
+Create `app/config/pushover.php`  and fill it with your Token and the User Key from https://pushover.net/
 
 ```
-php artisan config:publish dyaa/pushover
-```
-
-Now open: `app/config/packages/Dyaa/Pushover/config.php` and fill it with your Token and the User Key https://pushover.net/
-
-```
-return array(
-
+return [
     'token' => 'App Token',
     'user_key' => 'User Key',
-
-);
+];
 ```
 
 ----------
@@ -112,7 +105,7 @@ All other information will be found in details here https://pushover.net/api
 
 In the version 1.2.0 and above it supports the Artisan Commands but first make sure that you've done the [Configuration](#configuration) correctly.
 
-You can run 
+You can run
 
     php artisan list
 and you'll find
@@ -131,29 +124,29 @@ in the end of the Command line
 to set a sound you can add *"Optional"*
 
     --sound=YourSound
-    
+
 To know the supported sounds from here https://pushover.net/api#sounds
 
 to set a Device name *"Optional"*
 
     --device=YourDeviceName
-    
+
 to send a URL *"Optional"*
 
     --url=http://www.example.com/
-    
+
 to set a title for the URL *"Optional"*
 
     --urltitle=UrlTitle
-    
+
 to set a priority Message you can know more about the Priority Messages from here https://pushover.net/api#priority  *"Optional"*
 
     --priority=1
-    
+
 to set a priority retry *(in seconds)* Default is **60**  *"Optional"*
 
     --retry=60
-    
+
 to set a priority expire *(in seconds)* Default is **356**  *"Optional"*
 
     --expire=356
@@ -168,4 +161,3 @@ Copyright (c) 2015 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
 
   [1]: https://dyaa.me/
   [2]: https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE
-
