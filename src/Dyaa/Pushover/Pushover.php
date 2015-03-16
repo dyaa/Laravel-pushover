@@ -23,8 +23,8 @@ class Pushover
     {
         // Fetch the config data and set up the required url´s
         $this->config = $config;
-        $this->token = $this->config->get('dyaa_pushover::token');
-        $this->user_key = $this->config->get('dyaa_pushover::user_key');
+        $this->token = $this->config->get('dyaa_pushover.token');
+        $this->user_key = $this->config->get('dyaa_pushover.user_key');
     }
 
     public function push($title, $msg)

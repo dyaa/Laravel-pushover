@@ -12,16 +12,6 @@ class PushoverServiceProvider extends ServiceProvider {
 	protected $defer = false;
 
 	/**
-	 * Bootstrap the application events.
-	 *
-	 * @return void
-	 */
-	public function boot()
-	{
-		$this->package('dyaa/pushover', 'dyaa_pushover');
-	}
-
-	/**
 	 * Register the service provider.
 	 *
 	 * @return void
