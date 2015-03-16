@@ -45,9 +45,9 @@ Once dyaa/pushover is installed, you need to register the Service Provider. To d
 ----------
 
 
-#### Configuration 
+#### Configuration
 
-Create `app/config/dyaa_pushover.php`  and fill it with your Token and the User Key from https://pushover.net/
+Create `app/config/pushover.php`  and fill it with your Token and the User Key from https://pushover.net/
 
 ```
 return [
@@ -105,7 +105,7 @@ All other information will be found in details here https://pushover.net/api
 
 In the version 1.2.0 and above it supports the Artisan Commands but first make sure that you've done the [Configuration](#configuration) correctly.
 
-You can run 
+You can run
 
     php artisan list
 and you'll find
@@ -124,29 +124,29 @@ in the end of the Command line
 to set a sound you can add *"Optional"*
 
     --sound=YourSound
-    
+
 To know the supported sounds from here https://pushover.net/api#sounds
 
 to set a Device name *"Optional"*
 
     --device=YourDeviceName
-    
+
 to send a URL *"Optional"*
 
     --url=http://www.example.com/
-    
+
 to set a title for the URL *"Optional"*
 
     --urltitle=UrlTitle
-    
+
 to set a priority Message you can know more about the Priority Messages from here https://pushover.net/api#priority  *"Optional"*
 
     --priority=1
-    
+
 to set a priority retry *(in seconds)* Default is **60**  *"Optional"*
 
     --retry=60
-    
+
 to set a priority expire *(in seconds)* Default is **356**  *"Optional"*
 
     --expire=356
@@ -161,4 +161,3 @@ Copyright (c) 2015 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
 
   [1]: https://dyaa.me/
   [2]: https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE
-
