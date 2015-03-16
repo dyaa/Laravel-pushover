@@ -89,14 +89,11 @@ class PushoverCommand extends Command {
         $this->push->push($title, $msg);
 
         if ($debug) {
-            return $this->info($this->push->send());
-
+            $this->info($this->push->send());
+        } else if ($this->push->send()) {
+            $this->info("Your message has been sent.");
         } else {
-            if ($this->push->send()) {
-                return $this->info("Your message has been sent.");
-            } else {
-                return $this->error('Something went wrong!');
-            }
+            $this->error('Something went wrong!');
         }
     }
 
