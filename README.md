@@ -41,6 +41,17 @@ Once dyaa/pushover is installed, you need to register the Service Provider. To d
 'Dyaa\Pushover\PushoverServiceProvider',
 ```
 
+Next you add this facade to `app/config/app.php`
+
+```
+'Dyaa\Pushover\Facades\Pushover',
+```
+
+To use this in your L5 application:
+
+```
+use Dyaa\Pushover\Facades\Pushover;
+```
 
 ----------
 

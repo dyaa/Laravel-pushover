@@ -29,6 +29,13 @@ class Pushover
         $this->user_key = $this->config->get('pushover.user_key');
     }
 
+    public function config($token, $user_key)
+    {
+        // in case you want to dynamically update the token/user key
+        $this->token = $token;
+        $this->user_key = $user_key;
+    }
+
     public function push($title, $msg)
     {
         $this->title = $title;
