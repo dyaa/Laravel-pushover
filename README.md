@@ -21,7 +21,7 @@ If you still using laravel 4.1 use the **1.3.0** version
 
 To get the latest version of dyaa/pushover simply require it in your `composer.json` file.
 
-```
+```js
 "dyaa/pushover": "dev-master"
 ```
 
@@ -29,7 +29,7 @@ After that, you'll need to run `composer update` to download the latest Version 
 
 Or
 
-```
+```bash
 composer require dyaa/pushover:dev-master
 ```
 
@@ -37,19 +37,19 @@ composer require dyaa/pushover:dev-master
 
 Once dyaa/pushover is installed, you need to register the Service Provider. To do that open `app/config/app.php` and add the following to the `providers` key.
 
-```
+```php
 'Dyaa\Pushover\PushoverServiceProvider',
 ```
 
 Next you add this facade to `app/config/app.php`
 
-```
+```php
 'Dyaa\Pushover\Facades\Pushover',
 ```
 
 To use this in your L5 application:
 
-```
+```php
 use Dyaa\Pushover\Facades\Pushover;
 ```
 
@@ -60,7 +60,7 @@ use Dyaa\Pushover\Facades\Pushover;
 
 Create `app/config/pushover.php`  and fill it with your Token and the User Key from https://pushover.net/
 
-```
+```php
 return [
     'token' => 'App Token',
     'user_key' => 'User Key',
@@ -73,39 +73,39 @@ return [
 Now you can use the package like that:
 
 To Set a message (**Required**)
-```
+```php
 Pushover::push($title, $message);
 ```
 To Set a Link (Optional)
-```
+```php
 Pushover::url($url, $title);
 ```
 To Set a Callback (Optional)
-```
+```php
 Pushover::callback($callbackURL);
 ```
 To Set a Sound (Optional) Supported Notification Sounds https://pushover.net/api#sounds
-```
+```php
 Pushover::sound($sound);
 ```
 To Set a Device Name (Optional)
-```
+```php
 Pushover::device($device);
 ```
 To Set a Timestamp (Optional) Default is *time()*
-```
+```php
 Pushover::timestamp($timestamp);
 ```
 To Set Priority (Optional) For More Info about Priority https://pushover.net/api#priority
-```
+```php
 Pushover::priority($priority, $retry, $expire);
 ```
 To turn the Debug mode (Optional)
-```
+```php
 Pushover::debug(true);
 ```
 To Send the Message (**Required**)
-```
+```php
 Pushover::send();
 ```
 All other information will be found in details here https://pushover.net/api
