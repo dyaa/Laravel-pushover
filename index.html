@@ -1,54 +1,35 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>Laravel Pushover by dyaa</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Laravel Pushover</h1>
+      <h2 class="project-tagline">Laravel 4.1 Pushover Package</h2>
+      <a href="https://github.com/dyaa/Laravel-pushover" class="btn">View on GitHub</a>
+      <a href="https://github.com/dyaa/Laravel-pushover/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/dyaa/Laravel-pushover/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <h1>Laravel Pushover</h1>
-        <p>Laravel 4.2 Pushover Package</p>
-      </header>
+    <section class="main-content">
+      <h1>
+<a id="laravel-5-pushovernet-package" class="anchor" href="#laravel-5-pushovernet-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>Laravel 5 Pushover.net Package</h1>
 
-      <div id="banner">
-        <span id="logo"></span>
+<p><a href="https://travis-ci.org/dyaa/Laravel-pushover"><img src="https://travis-ci.org/dyaa/Laravel-pushover.svg?branch=v1.4.0" alt="Build Status"></a> <a href="https://packagist.org/packages/dyaa/pushover"><img src="https://poser.pugx.org/dyaa/pushover/v/stable.png" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/dyaa/pushover"><img src="https://poser.pugx.org/dyaa/pushover/downloads.png" alt="Total Downloads"></a> <a href="https://packagist.org/packages/dyaa/pushover"><img src="https://poser.pugx.org/dyaa/pushover/v/unstable.png" alt="Latest Unstable Version"></a> <a href="https://www.versioneye.com/user/projects/5303cf06ec1375065e000003"><img src="https://www.versioneye.com/user/projects/5303cf06ec1375065e000003/badge.png" alt="Dependency Status"></a>  <a href="https://packagist.org/packages/dyaa/pushover"><img src="https://poser.pugx.org/dyaa/pushover/license.png" alt="License"></a></p>
 
-        <a href="https://github.com/dyaa/Laravel-pushover" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Composer:</span>
-          <ul>
-            <li><a href="https://packagist.org/packages/dyaa/pushover" class="button">"dyaa/pushover": "dev-master"</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
-<a name="laravel-4-pushovernet-package" class="anchor" href="#laravel-4-pushovernet-package"><span class="octicon octicon-link"></span></a>Laravel 4 Pushover.net Package</h1>
-
-<p><a href="https://packagist.org/packages/dyaa/pushover"><img src="https://poser.pugx.org/dyaa/pushover/v/stable.png" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/dyaa/pushover"><img src="https://poser.pugx.org/dyaa/pushover/downloads.png" alt="Total Downloads"></a> <a href="https://packagist.org/packages/dyaa/pushover"><img src="https://poser.pugx.org/dyaa/pushover/v/unstable.png" alt="Latest Unstable Version"></a> <a href="https://packagist.org/packages/dyaa/pushover"><img src="https://poser.pugx.org/dyaa/pushover/license.png" alt="License"></a></p>
-
-<p>A Laravel 4 package for Android push notification service from <a href="https://pushover.net/">https://pushover.net/</a>.</p>
+<p>A Laravel 5 package for Android and iOS push notification service from <a href="https://pushover.net/">https://pushover.net/</a>.</p>
 
 <p>**Please if you found any bug or you have any enhancement, You're so welcomed to open an Issue or make a pull request.</p>
 
 <h4>
-<a name="content" class="anchor" href="#content"><span class="octicon octicon-link"></span></a>Content</h4>
+<a id="content" class="anchor" href="#content" aria-hidden="true"><span class="octicon octicon-link"></span></a>Content</h4>
 
 <ul>
 <li><a href="#installation">Installation</a></li>
@@ -56,102 +37,102 @@
 <li><a href="#usage">Usage</a></li>
 <li><a href="#commands">Commands</a></li>
 <li><a href="#license">License</a></li>
-</ul><hr><h4>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h4>
+</ul>
+
+<hr>
+
+<h4>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h4>
+
+<p>If you still using laravel 4.1 use the <strong>1.3.0</strong> version</p>
 
 <p>To get the latest version of dyaa/pushover simply require it in your <code>composer.json</code> file.</p>
 
-<pre><code>"dyaa/pushover": "dev-master"
-</code></pre>
+<div class="highlight highlight-source-js"><pre><span class="pl-s"><span class="pl-pds">"</span>dyaa/pushover<span class="pl-pds">"</span></span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>dev-master<span class="pl-pds">"</span></span></pre></div>
 
 <p>After that, you'll need to run <code>composer update</code> to download the latest Version and updating the autoloader.</p>
 
 <p>Or</p>
 
-<pre><code>composer require dyaa/pushover:dev-master
-</code></pre>
+<div class="highlight highlight-source-shell"><pre>composer require dyaa/pushover:dev-master</pre></div>
 
 <p>Once dyaa/pushover is installed, you need to register the Service Provider. To do that open <code>app/config/app.php</code> and add the following to the <code>providers</code> key.</p>
 
-<pre><code>'Dyaa\Pushover\PushoverServiceProvider',
-</code></pre>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-s"><span class="pl-pds">'</span>Dyaa\Pushover\PushoverServiceProvider<span class="pl-pds">'</span></span>,</span></pre></div>
 
-<hr><h4>
-<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h4>
+<p>Next you add this facade to <code>app/config/app.php</code></p>
 
-<p>First you need to publish the config file. To do that, type the following in the terminal:</p>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-s"><span class="pl-pds">'</span>Dyaa\Pushover\Facades\Pushover<span class="pl-pds">'</span></span>,</span></pre></div>
 
-<pre><code>php artisan config:publish dyaa/pushover
-</code></pre>
+<p>To use this in your L5 application:</p>
 
-<p>Now open: <code>app/config/packages/Dyaa/Pushover/config.php</code> and fill it with your Token and the User Key <a href="https://pushover.net/">https://pushover.net/</a></p>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-k">use</span> <span class="pl-c1">Dyaa\Pushover\Facades\Pushover</span>;</span></pre></div>
 
-<pre><code>return array(
+<hr>
 
-    'token' =&gt; 'App Token',
-    'user_key' =&gt; 'User Key',
+<h4>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration</h4>
 
-);
-</code></pre>
+<p>Create <code>app/config/pushover.php</code>  and fill it with your Token and the User Key from <a href="https://pushover.net/">https://pushover.net/</a></p>
 
-<hr><h4>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h4>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-k">return</span> [</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>token<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>App Token<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>user_key<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>User Key<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">];</span></pre></div>
+
+<hr>
+
+<h4>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h4>
 
 <p>Now you can use the package like that:</p>
 
 <p>To Set a message (<strong>Required</strong>)</p>
 
-<pre><code>Pushover::push($title, $message);
-</code></pre>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c1">Pushover</span><span class="pl-k">::</span>push(<span class="pl-smi">$title</span>, <span class="pl-smi">$message</span>);</span></pre></div>
 
 <p>To Set a Link (Optional)</p>
 
-<pre><code>Pushover::url($url, $title);
-</code></pre>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c1">Pushover</span><span class="pl-k">::</span>url(<span class="pl-smi">$url</span>, <span class="pl-smi">$title</span>);</span></pre></div>
 
 <p>To Set a Callback (Optional)</p>
 
-<pre><code>Pushover::callback($callbackURL);
-</code></pre>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c1">Pushover</span><span class="pl-k">::</span>callback(<span class="pl-smi">$callbackURL</span>);</span></pre></div>
 
 <p>To Set a Sound (Optional) Supported Notification Sounds <a href="https://pushover.net/api#sounds">https://pushover.net/api#sounds</a></p>
 
-<pre><code>Pushover::sound($sound);
-</code></pre>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c1">Pushover</span><span class="pl-k">::</span>sound(<span class="pl-smi">$sound</span>);</span></pre></div>
 
 <p>To Set a Device Name (Optional)</p>
 
-<pre><code>Pushover::device($device);
-</code></pre>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c1">Pushover</span><span class="pl-k">::</span>device(<span class="pl-smi">$device</span>);</span></pre></div>
 
 <p>To Set a Timestamp (Optional) Default is <em>time()</em></p>
 
-<pre><code>Pushover::timestamp($timestamp);
-</code></pre>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c1">Pushover</span><span class="pl-k">::</span>timestamp(<span class="pl-smi">$timestamp</span>);</span></pre></div>
 
 <p>To Set Priority (Optional) For More Info about Priority <a href="https://pushover.net/api#priority">https://pushover.net/api#priority</a></p>
 
-<pre><code>Pushover::priority($priority, $retry, $expire);
-</code></pre>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c1">Pushover</span><span class="pl-k">::</span>priority(<span class="pl-smi">$priority</span>, <span class="pl-smi">$retry</span>, <span class="pl-smi">$expire</span>);</span></pre></div>
 
 <p>To turn the Debug mode (Optional)</p>
 
-<pre><code>Pushover::debug(true);
-</code></pre>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c1">Pushover</span><span class="pl-k">::</span>debug(<span class="pl-c1">true</span>);</span></pre></div>
 
 <p>To Send the Message (<strong>Required</strong>)</p>
 
-<pre><code>Pushover::send();
-</code></pre>
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-c1">Pushover</span><span class="pl-k">::</span>send();</span></pre></div>
 
 <p>All other information will be found in details here <a href="https://pushover.net/api">https://pushover.net/api</a></p>
 
-<hr><h4>
-<a name="commands" class="anchor" href="#commands"><span class="octicon octicon-link"></span></a>Commands</h4>
+<hr>
+
+<h4>
+<a id="commands" class="anchor" href="#commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Commands</h4>
 
 <p>In the version 1.2.0 and above it supports the Artisan Commands but first make sure that you've done the <a href="#configuration">Configuration</a> correctly.</p>
 
-<p>You can run </p>
+<p>You can run</p>
 
 <pre><code>php artisan list
 </code></pre>
@@ -211,29 +192,21 @@ pushover:send               Pushover Command
 <pre><code>--expire=356
 </code></pre>
 
-<hr><h4>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h4>
+<hr>
 
-<p>Copyright (c) 2014 <a href="http://www.dyaa.me/">Dyaa Eldin Moustafa</a> Licensed under the <a href="https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE">MIT license</a>.</p>
+<h4>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h4>
 
-<p><a href="https://waffle.io/dyaa/Laravel-pushover"><img src="https://badge.waffle.io/dyaa/Laravel-pushover.png?label=ready" alt="Stories in Ready"></a></p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/dyaa">dyaa</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+<p>Copyright (c) 2015 <a href="https://dyaa.me/">Dyaa Eldin Moustafa</a> Licensed under the <a href="https://github.com/dyaa/Laravel-pushover/blob/master/LICENSE">MIT license</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/dyaa/Laravel-pushover">Laravel Pushover</a> is maintained by <a href="https://github.com/dyaa">dyaa</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-34209410-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
 
+    </section>
+
+  
   </body>
 </html>
