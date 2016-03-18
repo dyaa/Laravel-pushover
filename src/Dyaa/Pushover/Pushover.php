@@ -86,6 +86,11 @@ class Pushover
         $this->retry = $retry;
         $this->expire = $expire;
     }
+    
+    public function user($user_key)
+    {
+        $this->user_key = $user_key;
+    }
 
     public function send()
     {
