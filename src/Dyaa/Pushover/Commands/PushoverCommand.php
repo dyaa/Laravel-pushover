@@ -133,6 +133,7 @@ class PushoverCommand extends Command {
             ['priority', null, InputOption::VALUE_OPTIONAL, 'Set a Priority Message.', null],
             ['retry', null, InputOption::VALUE_OPTIONAL, 'Set a Retry for the Priority.', null],
             ['expire', null, InputOption::VALUE_OPTIONAL, 'Set an expire for the Priority.', null],
+            ['html', null, InputOption::VALUE_OPTIONAL, 'Sets if message should be sent as HTML.', null],
             ['debug', null, InputOption::VALUE_NONE, 'Turn the Debug Mode.', null],
         ];
     }
