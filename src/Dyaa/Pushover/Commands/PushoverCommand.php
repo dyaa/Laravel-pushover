@@ -48,6 +48,7 @@ class PushoverCommand extends Command {
         $priority   = $this->option('priority');
         $retry      = $this->option('retry');
         $expire     = $this->option('expire');
+        $html       = $this->option('html');
 
         if (!isset($retry)) {
             $retry = 60;
@@ -55,6 +56,10 @@ class PushoverCommand extends Command {
 
         if (!isset($expire)) {
             $expire = 365;
+        }
+
+        if(!isset($html)) {
+            $html = 1;
         }
 
         if (!isset($urltitle)) {
@@ -71,6 +76,9 @@ class PushoverCommand extends Command {
             $this->push->sound($sound);
         }
 
+        if ($html) {
+            $this->push->html($html);
+        }
         // if device var is set
         if ($device) {
             $this->push->device($device);

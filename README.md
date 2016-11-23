@@ -166,6 +166,11 @@ to set a priority expire *(in seconds)* Default is **356**  *"Optional"*
 
     --expire=356
 
+to set if message should be sent as HTML. Default is **1**  *"Optional"*
+*Note: Message body needs to be wrapped in quotes.*
+
+    --html=1
+
 ----------
 
 
