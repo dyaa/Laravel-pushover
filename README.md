@@ -92,6 +92,10 @@ To Set a Device Name (Optional)
 ```php
 Pushover::device($device);
 ```
+To Set if the Message should be sent as HTML (Optional) Default is 1
+```php
+Pushover::html($html);
+```
 To Set a Timestamp (Optional) Default is *time()*
 ```php
 Pushover::timestamp($timestamp);
