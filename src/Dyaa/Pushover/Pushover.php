@@ -20,6 +20,7 @@ class Pushover
     private $expire;
     private $title;
     private $msg;
+    private $html = 1;
 
     public function __construct(Repository $config)
     {
@@ -72,6 +73,11 @@ class Pushover
         $this->device = $device;
     }
 
+    public function html($html)
+    {
+        $this->html = $html;
+    }
+
     public function timestamp($timestamp = null)
     {
         if ($timestamp == null) {
@@ -106,6 +112,7 @@ class Pushover
             'message'   => $this->msg,
             'device'    => $this->device,
             'timestamp' => $this->timestamp,
+            'html'      => $this->html,
             'callback'  => $this->callback,
             'sound'     => $this->sound,
             'url'       => $this->url,

@@ -48,6 +48,7 @@ class PushoverCommand extends Command {
         $priority   = $this->option('priority');
         $retry      = $this->option('retry');
         $expire     = $this->option('expire');
+        $html       = $this->option('html');
 
         if (!isset($retry)) {
             $retry = 60;
@@ -55,6 +56,10 @@ class PushoverCommand extends Command {
 
         if (!isset($expire)) {
             $expire = 365;
+        }
+
+        if(!isset($html)) {
+            $html = 1;
         }
 
         if (!isset($urltitle)) {
@@ -71,6 +76,9 @@ class PushoverCommand extends Command {
             $this->push->sound($sound);
         }
 
+        if ($html) {
+            $this->push->html($html);
+        }
         // if device var is set
         if ($device) {
             $this->push->device($device);
@@ -125,6 +133,7 @@ class PushoverCommand extends Command {
             ['priority', null, InputOption::VALUE_OPTIONAL, 'Set a Priority Message.', null],
             ['retry', null, InputOption::VALUE_OPTIONAL, 'Set a Retry for the Priority.', null],
             ['expire', null, InputOption::VALUE_OPTIONAL, 'Set an expire for the Priority.', null],
+            ['html', null, InputOption::VALUE_OPTIONAL, 'Sets if message should be sent as HTML.', null],
             ['debug', null, InputOption::VALUE_NONE, 'Turn the Debug Mode.', null],
         ];
     }

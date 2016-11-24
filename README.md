@@ -92,6 +92,10 @@ To Set a Device Name (Optional)
 ```php
 Pushover::device($device);
 ```
+To Set if the Message should be sent as HTML (Optional) Default is 1
+```php
+Pushover::html($html);
+```
 To Set a Timestamp (Optional) Default is *time()*
 ```php
 Pushover::timestamp($timestamp);
@@ -161,6 +165,11 @@ to set a priority retry *(in seconds)* Default is **60**  *"Optional"*
 to set a priority expire *(in seconds)* Default is **356**  *"Optional"*
 
     --expire=356
+
+to set if message should be sent as HTML. Default is **1**  *"Optional"*
+*Note: Message body needs to be wrapped in quotes.*
+
+    --html=1
 
 ----------
 
