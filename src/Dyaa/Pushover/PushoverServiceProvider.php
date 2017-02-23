@@ -20,7 +20,7 @@ class PushoverServiceProvider extends ServiceProvider {
     public function register()
     {
 
-        $this->app['pushover'] = $this->app->share(function($app)
+        $this->app->singleton('pushover', function($app)
         {
             return new Pushover($app['config']);
         });
@@ -31,7 +31,7 @@ class PushoverServiceProvider extends ServiceProvider {
             $loader->alias('Pushover', 'Dyaa\Pushover\Facades\Pushover');
         });
 
-        $this->app['pushover.send'] = $this->app->share(function ()
+        $this->app->singleton('pushover.send', function ()
         {
             return new Commands\PushoverCommand($this->app['pushover']);
         });
