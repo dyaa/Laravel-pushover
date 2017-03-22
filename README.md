@@ -176,7 +176,7 @@ to set if message should be sent as HTML. Default is **1**  *"Optional"*
 
 #### License
 
-Copyright (c) 2015 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
+Copyright (c) 2017 [Dyaa Eldin Moustafa][1] Licensed under the [MIT license][2].
 
 
   [1]: https://dyaa.me/
